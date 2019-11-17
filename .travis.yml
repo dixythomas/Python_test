@@ -1,4 +1,4 @@
 language: python
 python :
-  -2.7.14
+  -2.7
 script: python frog_cross_river.py
