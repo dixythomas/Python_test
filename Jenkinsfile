@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:2.7' } }
+    agent { '/Users/dixy/PycharmProjects/practiselist/venv/bin' }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python frog_jump.py'
             }
         }
     }
