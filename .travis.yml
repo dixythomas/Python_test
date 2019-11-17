@@ -1,4 +1,8 @@
 language: python
 python :
   - "2.7"
-script: python frog_jump.py
+services:
+  -docker
+script: 
+  -docker build -t my-python-app .
+  -docker run my-python-app
