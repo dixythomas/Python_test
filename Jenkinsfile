@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python frog_jump.py'
+                sh 'docker build -t my-python-app .'
+		sh 'docker run my-python-app'
             }
         }
     }
