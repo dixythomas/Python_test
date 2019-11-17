@@ -1,9 +1,9 @@
 pipeline {
-    agent { any  }
+    agent { dockerfile true  }
     stages {
         stage('build') {
             steps {
-                sh '/Users/dixy/PycharmProjects/practiselist/venv/bin python frog_jump.py'
+                sh 'python frog_jump.py'
             }
         }
     }
