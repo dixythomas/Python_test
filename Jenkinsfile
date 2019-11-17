@@ -1,11 +1,9 @@
 pipeline {
-    agent { any
-		{'/Users/dixy/PycharmProjects/practiselist/venv/bin'}
-	  }
+    agent { any  }
     stages {
         stage('build') {
             steps {
-                sh 'python frog_jump.py'
+                sh '/Users/dixy/PycharmProjects/practiselist/venv/bin python frog_jump.py'
             }
         }
     }
