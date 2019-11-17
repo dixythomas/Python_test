@@ -1,5 +1,5 @@
 pipeline {
-    agent { '/Users/dixy/PycharmProjects/practiselist/venv/bin' }
+    agent { 'any:/Users/dixy/PycharmProjects/practiselist/venv/bin' }
     stages {
         stage('build') {
             steps {
