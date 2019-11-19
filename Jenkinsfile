@@ -1,10 +1,9 @@
 pipeline {
-    agent { dockerfile true  }
+    agent { any  }
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t my-python-app .'
-		sh 'docker run my-python-app'
+                sh 'python frog_jump.py'
             }
         }
     }
