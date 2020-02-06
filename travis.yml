@@ -1,7 +1,0 @@
-language: python
-python :
-  -2.7.14
-
-cache: npm
-
-script: python frog_cross_river.py
