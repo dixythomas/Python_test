@@ -6,4 +6,4 @@ def solution(X,Y,D):
         i+= 1
     print i
 
-solution(3, 999111321, 70,3000)
+solution(3, 999111321, 70)
