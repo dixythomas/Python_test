@@ -8,7 +8,7 @@ input {
                 }
             }
          steps {
-            echo 'Hello ${PERSON}'
+            echo 'Hell ${PERSON}'
             sh 'python frog_jump.py'
          }
       }
