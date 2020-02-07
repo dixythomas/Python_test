@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            echo 'Hello ${PERSON}'
+            echo 'Hello ${params.PERSON}'
             sh 'python frog_jump.py'
          }
       }
