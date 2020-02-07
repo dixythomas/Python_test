@@ -3,8 +3,9 @@ pipeline {
 
    stages {
       stage('Hello') {
-input {
-		string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+      input {
+         parameters {
+                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
                 }
             }
          steps {
