@@ -1,5 +1,5 @@
 def solution(X,Y,D):
-	"""some code"""
+	"""some code,some changes"""
 
     i=0
     while X<Y:
