@@ -5,11 +5,12 @@ pipeline {
      }
    stages {
       stage('Hello') {
-        when{ branch'master'}
          steps {
+          if (env.BRANCH_NAME == "MASTER"){
             echo "${env.BRANCH_NAME}"
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
+          }
          }
       }
    }
