@@ -6,7 +6,9 @@ pipeline {
    stages {
       stage('Hello') {
          when{
+          script{
            (env.BRANCH_NAME == 'master')
+          }
           }
          steps {
             echo "${params.PERSON}"
