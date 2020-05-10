@@ -6,7 +6,9 @@ pipeline {
    stages {
       stage('Hello') {
          when{
+          anyOf{
             branch'master'
+            }
           }
          steps {
             echo "${params.PERSON}"
