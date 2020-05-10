@@ -1,4 +1,5 @@
 def solution(X,Y,D):
+	"""some code"""
 
     i=0
     while X<Y:
