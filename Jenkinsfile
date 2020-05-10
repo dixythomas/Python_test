@@ -6,8 +6,9 @@ pipeline {
    stages {
       stage('Hello') {
          when{
-          anyOf{
-            branch'master'
+            anyOf{
+              expression{env.BRANCH_NAME == "new_code"};
+              branch 'master'
             }
           }
          steps {
