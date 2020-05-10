@@ -8,10 +8,11 @@ pipeline {
          when{
             anyOf{
               expression{env.BRANCH_NAME == "new_code"};
-              branch 'master'
+              expression{env.BRANCH_NAME == "nmaster"};
             }
           }
          steps {
+            echo "${env.BRANCH_NAME}"
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
          }
