@@ -5,6 +5,7 @@ pipeline {
      }
    stages {
       stage('Hello') {
+         when{branch'master'}
          steps {
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
