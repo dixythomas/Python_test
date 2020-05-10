@@ -6,12 +6,15 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
+          when 
+          {branch'master'}
+          {
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
          }
          stage('new') {
          steps {
-          if (branch == "origin/new_code"):
+          when{branch "origin/new_code"}
           {
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
