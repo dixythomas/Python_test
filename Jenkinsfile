@@ -9,6 +9,14 @@ pipeline {
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
          }
+         stage('new') {
+         steps {
+          if (branch == "origin/new_code"):
+          {
+            echo "${params.PERSON}"
+            sh 'python frog_jump.py'
+          }
+         }
       }
    }
 }
