@@ -1,7 +1,4 @@
 def solution(X,Y,D):
-	"""some code,some changes,somemore,some
-	"""
-
     i=0
     while X<Y:
         X = X+D
