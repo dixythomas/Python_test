@@ -1,5 +1,5 @@
 def solution(X,Y,D):
-	"""some code,some changes,somemore
+	"""some code,some changes,somemore,some
 	"""
 
     i=0
