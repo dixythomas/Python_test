@@ -5,8 +5,10 @@ pipeline {
      }
    stages {
       stage('Hello') {
+         when{
+          env.GIT_BRANCH == 'origin/master'
+         }
          steps {
-            sh 'printenv'
             echo env.GIT_BRANCH
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
