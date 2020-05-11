@@ -5,9 +5,7 @@ pipeline {
      }
    stages {
       stage('Hello') {
-        when {
-                env.BRANCH_NAME == 'origin/master';
-            }
+        if (env.BRANCH_NAME == 'origin/master')
          steps 
           {
             echo "${env.BRANCH_NAME}"
