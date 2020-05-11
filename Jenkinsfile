@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('Hello') {
         when {
-                branch 'master'
+                branch 'origin/master'
             }
          steps 
           {
