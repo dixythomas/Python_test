@@ -5,13 +5,12 @@ pipeline {
      }
    stages {
       stage('Hello') {
-         steps {
+         steps 
           {
             echo "${env.BRANCH_NAME}"
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
           }
-         }
       }
    }
 }
