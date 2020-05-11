@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('Hello') {
         when {
-                branch 'origin/master'
+                env.BRANCH_NAME == 'origin/master'
             }
          steps 
           {
