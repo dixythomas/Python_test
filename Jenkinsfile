@@ -5,6 +5,9 @@ pipeline {
      }
    stages {
       stage('Hello') {
+        when{
+          branch 'origin/master'
+        }
          steps {
             echo env.BRANCH_NAME
             sh 'git branch'
