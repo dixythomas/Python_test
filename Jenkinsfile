@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('Hello') {
         when {
-                env.BRANCH_NAME == 'origin/master'
+                env.BRANCH_NAME == 'origin/master';
             }
          steps 
           {
