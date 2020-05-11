@@ -7,7 +7,7 @@ pipeline {
       stage('Hello') {
          steps {
             sh 'printenv'
-            sh 'git branch'
+            echo env.GIT_BRANCH
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
           }
