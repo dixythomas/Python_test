@@ -5,6 +5,9 @@ pipeline {
      }
    stages {
       stage('Hello') {
+        when{
+        expression { BRANCH_NAME ==~ /(master)/ }
+      }
          steps {
             sh 'git branch'
             echo "${params.PERSON}"
