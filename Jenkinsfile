@@ -9,6 +9,7 @@ pipeline {
         expression { env.BRANCH_NAME ==~ /(master)/ };
       }
          steps {
+          echo env.BRANCH_NAME
             sh 'git branch'
             echo "${params.PERSON}"
             sh 'python frog_jump.py'
