@@ -1,5 +1,5 @@
 def solution(X,Y,D):
-	#comment something
+    #comment something
     i=0
     while X<Y:
         X = X+D
