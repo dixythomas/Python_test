@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('Hello') {
          when{
-          expression { env.GIT_BRANCH == 'origin/master'};
+          expression { env.GIT_BRANCH == 'origin/master' };
          }
          steps {
             echo env.GIT_BRANCH
